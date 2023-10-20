@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .heading {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="head-1">I love JS</h1>
+    <button class="btn-1">Click Me</button>
+
+    <script>
+      const h1El = document.querySelector(".head-1");
+      const btnEl = document.querySelector(".btn-1");
+
+      btnEl.addEventListener("click", toggleClass);
+      function toggleClass() {
+        if (h1El.classList.contains("heading")) {
+          h1El.classList.remove("heading");
+        } else {
+          h1El.classList.add("heading");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading {
+        background-color: yellow;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="head-1">I love JavaScript</h1>
+    <button id="btn-1">Add Class</button>
+    <button id="btn-2">Remove Class</button>
+
+    <script>
+      const h1El = document.querySelector("#head-1");
+      const addClassBtn = document.querySelector("#btn-1");
+      const removeClassBtn = document.querySelector("#btn-2");
+
+      addClassBtn.addEventListener("click", function () {
+        h1El.classList.add("heading");
+      });
+
+      removeClassBtn.addEventListener("click", function () {
+        h1El.classList.remove("heading");
+      });
+    </script>
+  </body>
+</html>

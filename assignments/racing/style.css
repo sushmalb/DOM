@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #c31432, #240b36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding-bottom: 50px;
+  color: white;
+}
+
+#count-down {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(114, 238, 147);
+  color: black;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.5s;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 60%;
+  height: 70%;
+  background-color: #240b36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#start-btn {
+  background-color: green;
+}
+#reset-btn {
+  background-color: #c31432;
+}
+
+#start-btn:disabled {
+  background-color: grey;
+  color: black;
+}
+#reset-btn:disabled {
+  background-color: #ccc;
+  color: black;
+}
+
+.go #count-down {
+  background-color: #c31432;
+}
